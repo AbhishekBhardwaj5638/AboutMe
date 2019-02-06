@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -7,10 +9,20 @@
 
     <TextView
         android:id="@+id/name"
+        style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding"
         android:text="@string/name"
         android:textAlignment="center"
-        style="@style/NameStyle" />
+        tools:layout_marginTop="@dimen/layout_margin" />
+
+    <ImageView
+        android:id="@+id/star_Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:contentDescription="@string/ImageDesc"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 
 </LinearLayout>
