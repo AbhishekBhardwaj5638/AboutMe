@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    >
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -18,7 +21,7 @@
         tools:layout_marginTop="@dimen/layout_margin" />
 
     <EditText
-        android:id="@+id/nickName"
+        android:id="@+id/editNickName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -26,16 +29,17 @@
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/done"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/roboto"
+
         android:text="@string/done" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/newNickName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -80,3 +84,4 @@
     </ScrollView>
 
 </LinearLayout>
+</layout>
